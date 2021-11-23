@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <th>Company ID</th>
+            <th>Company Name</th>
+        </tr>
+        {% for ele in row %}
+            <tr>
+                <td>{{ele['companyid']}}</td>
+                <td>{{ele['cname']}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+{% endblock %}
